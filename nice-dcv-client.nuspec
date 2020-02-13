@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nice-dcv-client</id>
+    <title>NICE DCV Client</title>
+    <version>2019.1-7114</version>
+    <authors>Amazon Web Services, Inc.</authors>
+    <owners>medalibi</owners>
+    <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
+    <description>NICE DCV is a high-performance remote display protocol that provides customers with a secure way to deliver remote desktops and application streaming from any cloud or data center to any device, over varying network conditions. With NICE DCV and Amazon EC2, customers can run graphics-intensive applications remotely on EC2 instances, and stream the results to simpler client machines, eliminating the need for expensive dedicated workstations. Customers across a broad range of HPC workloads use NICE DCV for their remote visualization requirements. The NICE DCV streaming protocol is also utilized by popular services, like Amazon Appstream 2.0 and AWS RoboMaker.</description>
+    <projectUrl>https://aws.amazon.com/hpc/dcv/</projectUrl>
+    <packageSourceUrl>https://github.com/awsdocs/nice-dcv-admin-guide</packageSourceUrl>
+    <tags>nice-dcv dcv vdi aws client linux windows macos</tags>
+    <copyright>© 2020, Amazon Web Services, Inc. or its affiliates. All rights reserved.</copyright>
+    <licenseUrl>https://www.nice-dcv.com/eula.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/Windos/chocolatey/master/vmware-horizon-client/vmware-horizon-client-new.png</iconUrl>
+	<dependencies>
+	  <dependency id='KB3151802' />
+	  <dependency id='vc_redist.x64.' />
+	</dependencies>
+    <releaseNotes> What Is NICE DCV?
+	
+	NICE DCV is a high-performance remote display protocol. It lets you securely deliver remote desktops and application streaming from any cloud or data center to any device, over varying network conditions. By using NICE DCV with Amazon EC2, you can run graphics-intensive applications remotely on Amazon EC2 instances. You can then stream the results to more modest client machines, which eliminates the need for expensive dedicated workstations.
+	
+	* How NICE DCV Works
+		To use NICE DCV, install the NICE DCV server software on a server. The NICE DCV server software is used to create a secure session. You install and run your applications on the server. The server uses its hardware to perform the high-performance processing that the installed applications require. Your users access the application by remotely connecting to the session using a NICE DCV client application. When the connection is established, the NICE DCV server software compresses the visual output of the application and streams it back to the client application in an encrypted pixel stream. The client application receives the compressed pixel stream, decrypts it, and then outputs it to the local display.
+
+    * Features of NICE DCV
+		NICE DCV offers the following features:
+
+		Shares the entire desktop — Uses the high-performance NICE DCV protocol to share full control of the entire remote desktop.
+
+		Transport images only — Transports rendered images as pixels instead of geometry and scene information. This provides an additional layer of security as no proprietary customer information is sent over the network.
+
+		Supports H.264-based encoding — Uses H.264-based video compression and encoding to reduce bandwidth consumption.
+
+		Supports lossless quality video compression - Supports lossless quality video compression when the network and processor conditions allow.
+
+		Matches display layouts — Automatically adapts the server's screen resolution and display layout to match the size of the client window.
+
+		Supports multi-screen — Lets you expand the session desktop across up to four monitors.
+
+		Adapts compression levels — Automatically adapts the video compression levels based on the network's available bandwidth and latency.
+
+		Enables collaboration — Provides dynamic sessions that support multiple collaborative clients. Clients can connect and disconnect at any time during the session.
+
+		Supports multiple sessions per server (Linux NICE DCV servers only) — Supports multiple virtual sessions per Linux NICE DCV server to maximize cost savings.
+
+		Supports GPU sharing (Linux NICE DCV servers only) — Lets you share one or more physical GPUs between multiple virtual sessions running on a Linux NICE DCV server.
+
+		Supports USB, smart card, and stylus remotization — Lets you use your peripherals in a NICE DCV session just like you would on your local computer.
+
+		Supports audio in and out, printing, and copy and paste — Lets you perform these key actions between the session and your local computer.
+
+		Supports file transfer — Lets you transfer files between the session and your local computer.
+
+		Provides an HTML5 client - Offers an HTML5 client that can be used with any modern web browser on Windows and Linux.
+
+		Supports modern Linux desktop environments — Supports modern Linux desktops, such as Gnome 3 on RHEL 7.
+
+		</releaseNotes>
+	<docsUrl>https://docs.aws.amazon.com/dcv/latest/userguide/dcv-ug.pdf</docsUrl>
+	<mailingListUrl>https://docs.aws.amazon.com/dcv/latest/adminguide/what-is-dcv.html</mailingListUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
