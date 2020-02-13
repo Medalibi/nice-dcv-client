@@ -4,7 +4,7 @@
   <metadata>
     <id>nice-dcv-client</id>
     <title>NICE DCV Client</title>
-    <version>2019.1-7114</version>
+    <version>2019.1.7114</version>
     <authors>Amazon Web Services, Inc.</authors>
     <owners>medalibi</owners>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
