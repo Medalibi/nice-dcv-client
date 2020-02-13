@@ -18,7 +18,7 @@
     <iconUrl>https://github.com/Medalibi/nice-dcv-client/raw/master/nice-dcv-client.png</iconUrl>
 	<dependencies>
 	  <dependency id='KB3151802' />
-	  <dependency id='vc_redist.x64.' />
+	  <dependency id='vc_redist' />
 	</dependencies>
     <releaseNotes> What Is NICE DCV?
 	
